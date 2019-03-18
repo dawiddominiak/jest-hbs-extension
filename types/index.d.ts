@@ -13,7 +13,5 @@ declare namespace jest {
 }
 
 declare module 'jest-hbs-extension' {
-  function addJestHbsExtension(viewsPath: string): void;
-
-  export = addJestHbsExtension;
+  export default function addJestHbsExtension(viewsPath: string): void;
 }
