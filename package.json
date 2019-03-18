@@ -1,6 +1,6 @@
 {
   "name": "jest-hbs-extension",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Jest extension to test HBS templates",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
