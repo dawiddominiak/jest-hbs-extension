@@ -1,7 +1,7 @@
-import toMatchHBSTemplate from './toMatchHBSTemplate';
+import toMatchCompiledHandlebarsTemplate from './toMatchCompiledHandlebarsTemplate';
 
 export default (viewsPath) => {
   return {
-    toMatchHBSTemplate: toMatchHBSTemplate(viewsPath),
+    toMatchCompiledHandlebarsTemplate: toMatchCompiledHandlebarsTemplate(viewsPath),
   };
 };

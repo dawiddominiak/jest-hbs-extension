@@ -8,7 +8,7 @@ declare namespace jest {
      * @param {String} templateName
      * @param {Object} data
      */
-    toMatchHBSTemplate(templateName: string, data: Object): R;
+    toMatchCompiledHandlebarsTemplate(templateName: string, data: Object): R;
   }
 }
 
