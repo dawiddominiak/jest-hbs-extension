@@ -11,3 +11,9 @@ declare namespace jest {
     toMatchHBSTemplate(templateName: string, data: Object): R;
   }
 }
+
+declare module 'jest-hbs-extension' {
+  function addJestHbsExtension(viewsPath: string): void;
+
+  export = addJestHbsExtension;
+}
