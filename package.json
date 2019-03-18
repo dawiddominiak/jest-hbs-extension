@@ -1,6 +1,6 @@
 {
   "name": "jest-hbs-extension",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Jest extension to test HBS templates",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/dawiddominiak/jest-hbs-extension#readme",
   "dependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "handlebars": "^4.1.1",
     "jest": "^24.5.0"
