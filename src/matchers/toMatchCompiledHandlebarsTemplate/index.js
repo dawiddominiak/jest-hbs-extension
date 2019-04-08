@@ -6,8 +6,15 @@ export default (viewsPath) => {
     const templatePath = resolve(viewsPath, templateName);
     if (predicate(html, { templatePath, data })) {
       return {
-        message: () =>
-          `expected ${html} to not be compiled from ${templateName} for data ${data}`,
+        message: () => {
+          let stringifiedData = data;
+
+          if (typeof data === 'object') {
+            stringifiedData = JSON.stringify(data, undefined, '\t');
+          }
+
+          return `expected ${html} to not be compiled from ${templateName} for data ${stringifiedData}`;
+        },
         pass: true,
       };
     } else {
